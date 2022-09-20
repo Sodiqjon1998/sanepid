@@ -12,7 +12,7 @@
             .logos {
                 width          : max-content;
                 display        : flex;
-                justify-content: space-between;
+                justify-content: start;
                 align-items    : center;
       
                 .logo {
@@ -25,6 +25,16 @@
                 .txt-14 {
                   color: $cff;
                   font-weight: 300 !important;
+                  width: 300px;
+                  @include media(750px){
+                    width: 300px;
+                  }
+                  @include media(600px){
+                    width: 230px;
+                  }
+                  @include media(360px){
+                    width: 210px;
+                  }
                 }
               }
             .blog{
@@ -46,6 +56,10 @@
                         width: 20px;
                         height: 20px;
                         margin-right: 10px;
+                        &:last-child{
+                            width: 24px;
+                            height: 24px;
+                        }
                     }
                     .txt-16{
                         color: $cff;
@@ -60,11 +74,16 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: start !important;
                 align-items: flex-start;
+                
                 .menus{
                     display: flex;
                     flex-direction: column;
+                    margin-right: 24px;
+                    @include media(650px){
+                        margin-right: 0;
+                    }
                     &-in{
                         margin-top: 24px;
                         &:first-child{

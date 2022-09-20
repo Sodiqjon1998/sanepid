@@ -3,6 +3,12 @@
 .rahbaryat-main{
     width: 100%;
     padding: 50px 0 60px;
+    .my-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
     @include media(1050px){
         padding: 20px 0 60px;
       }
@@ -10,7 +16,11 @@
         padding: 15px 0 40px;
       }
     .rahbaryat-in{
-        width: 100%;
+        width: 68%;
+        @include media(1200px){
+            width: 100%;
+        }
+
         .top-t{
             color: #000000;
             font-weight: 600;
@@ -30,13 +40,13 @@
             justify-content: space-between;
             flex-wrap: wrap;
             .blog-in{
-                width: 49%;
+                width: 100% !important;
                 .card-b{
                     width: 100% !important;
                 }
             }
             .card-b{
-                width: 49%;
+                width: 100%;
                 background: #FFFFFF;
                 box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.07);
                 border-radius: 12px;
@@ -100,6 +110,71 @@
             
         }
     }
+
+    .main-right{
+        width: 30%;
+        @include media(1200px){
+            display: none;
+        }
+        .txt-30{
+            color: #000;
+            font-weight: 500;
+        }
+        .cards{
+            margin-top: 12px;
+            width: 100%;
+            .s-card {
+                margin-top: 12px;
+                background: $cff;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+                border-radius: 12px;
+                padding: 12px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: .2s;
+                &:hover{
+                    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.07) !important;
+                    .txt-14{
+                        color: $c16;
+                    }
+                }
+                .top {
+                  width: 100px;
+                  height: 85px;
+                  border-radius: 12px;
+                  margin-right: 15px;
+                }
+                .right{
+                  width: max-content;
+                }
+                .sana{
+                    text-align: start;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 7px;
+                    .txt-12 {
+                        color: #BCBCBC;
+                        font-weight: 400;
+                    }
+                    svg{
+                        width: 12px;
+                        height: 11px;
+                        margin-right: 10px;
+                    }
+                }
+                .main-text{
+                    transition: .2s;
+                  font-weight: 500;
+                  color: #000000;
+                }
+    
+    
+    
+              }
+        }
+    }
 }
 
 .bot-b{
@@ -107,8 +182,17 @@
     margin: 40px 0 0;
     padding-top: 18px;
     border-top: 1px solid #D9D9D9;
+    position: relative;
     .glavni-btn{
         padding: 10px 24px;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        @include media(950px){
+            position: relative;
+            right: auto;
+            top: auto;
+        }
     }
     display: flex;
     align-items: flex-start;
@@ -119,7 +203,7 @@
 }
 
 .acardions {
-    width: 60%;
+    width: 100%;
     @include media(1100px){
         width: 100%;
         margin-top: 18px;
@@ -186,7 +270,7 @@
         transition: all 300ms ease;
 
         .item-answer {
-            margin-top: 20px;
+            margin-top: 30px;
             font-weight: 400;
             color: #3F4649;
         }

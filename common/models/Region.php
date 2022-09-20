@@ -37,7 +37,7 @@ class Region extends DefaultActiveRecord
                     'ru' => 'Rus',
                 ],
                 'attributes' => [
-                    'title', 'content'
+                    'title', 'content', 'address'
                 ],
             ],
             [

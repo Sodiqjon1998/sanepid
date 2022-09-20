@@ -53,6 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 return $model->category->title ?? '-';
                             }
                         ],
+                        'address',
                         'name',
                         'phone',
                         [

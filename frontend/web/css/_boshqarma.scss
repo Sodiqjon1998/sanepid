@@ -15,33 +15,17 @@
         .main-content {
           width: 100%;
           position: relative;
-          .card-r{
-                padding: 38px 24px;
-                background: #FFFFFF;
-                box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.07);
-                border-radius: 12px;
-                width: 40%;
-                .txt-20{
-                    color: $c00;
-                }
-                .card-blog{
-                    display: flex;
-                    align-items: center;
-                    margin-top: 15px;
-                    svg{
-                        width: 15px;
-                        height: 18px;
-                        margin-right: 10px;
-                    }
-                    .txt-16{
-                        color: $c00;
-                        font-weight: 400;
-                    }
-                }
-            }
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: wrap;
             .card-l{
                 padding: 24px;
-                width: 58%;
+                margin-top: 24px;
+                width: 49%;
+                @include media(1300px){
+                    width: 100%;
+                }
                 background: #FFFFFF;
                 box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.07);
                 border-radius: 12px;
@@ -65,6 +49,9 @@
                             width: 15px;
                             height: 18px;
                             margin-right: 10px;
+                            &:last-child{
+                                width: 20px;
+                            }
                         }
                         .txt-16{
                             color: $c00;
@@ -74,14 +61,6 @@
                 }
                 }
             }
-            .cards{
-                width: 100%;
-                margin-top: 33px;
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-
         }
     }
 }

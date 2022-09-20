@@ -29,9 +29,9 @@ return [
         ],
 
     ],
-    'on beforeAction' => function($event){
-        if(Yii::$app instanceof  \yii\base\Application){
-            \common\components\LanguageHelper::setLanguage();
-        }
-    }
+//    'on beforeAction' => function($event){
+//        if(Yii::$app instanceof  \yii\base\Application){
+//            \common\components\LanguageHelper::setLanguage();
+//        }
+//    }
 ];

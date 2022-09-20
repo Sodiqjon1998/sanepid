@@ -18,7 +18,7 @@ class RegionSearch extends Region
     {
         return [
             [['id', 'category_id', 'status'], 'integer'],
-            [['img', 'name', 'phone', ], 'safe'],
+            [['img', 'name', 'phone', 'address'], 'safe'],
         ];
     }
 

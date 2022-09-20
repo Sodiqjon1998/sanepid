@@ -1,30 +1,32 @@
 <?php
 
 /* @var $leaderCategory \common\models\LeaderCategory */
+
 /* @var $leaders \common\models\Leader */
 
 use yii\helpers\Url;
+
 $this->title = $leaderCategory->title;
 ?>
+
+
 
 
 <div class="rahbaryat-main">
     <div class="my-container">
         <div class="rahbaryat-in">
-            <p class="top-t txt-20"><?=Yii::t('app','leader');?> <span> >  <?= $leaderCategory->title; ?></span></p>
+            <p class="top-t txt-20"><?= Yii::t('app', 'leader'); ?> <span> >  <?= $leaderCategory->title; ?></span></p>
             <h1 class="txt-48">
                 <?= $leaderCategory->title; ?>
             </h1>
             <div class="main-content">
-             
-                    <div class="row">
+                <div class="blog-in">
                     <?php foreach ($leaders as $leader): ?>
-                        <div class="col-md-6">
-                            <div class="card-b w-100">
+                        <div class="card-b">
                             <img src="<?=$leader->getImageUrl();?>" alt="">
                             <div class="sec">
                                 <p class="txt-14">
-                                    <?=substr($leader->job, 0, 50);?>
+                                    <?=$leader->job;?>
                                 </p>
                                 <p class="txt-18">
                                     <?=$leader->name;?>
@@ -38,11 +40,11 @@ $this->title = $leaderCategory->title;
                                                       d="M2.96246 8.548C5.30948 13.4392 9.48597 17.328 14.6778 19.4351L14.6942 19.4417L15.6972 19.8696C16.9745 20.4142 18.4757 20.0274 19.2946 18.9427L20.968 16.7261C21.0702 16.5907 21.0438 16.4025 20.908 16.2975L17.9867 14.0418C17.8414 13.9297 17.6278 13.9559 17.5167 14.0993L16.3798 15.5677C16.1036 15.9244 15.6049 16.0483 15.1824 15.8653C11.3002 14.1837 8.18052 11.198 6.42361 7.48244C6.23239 7.07805 6.36187 6.60079 6.73447 6.33651L8.26873 5.24831C8.41866 5.14197 8.44596 4.93759 8.32877 4.79859L5.97161 2.0022C5.86206 1.87222 5.66542 1.84698 5.52396 1.94472L3.19535 3.55361C2.0545 4.34185 1.65274 5.79072 2.23507 7.01665L2.96169 8.54636C2.96195 8.54692 2.96221 8.54746 2.96246 8.548ZM13.9005 21.1673C8.25924 18.8754 3.72182 14.6489 1.17162 9.33292L1.17009 9.32978L0.441945 7.79685C-0.528605 5.75364 0.140997 3.33884 2.04243 2.02511L4.37103 0.416223C5.3613 -0.267983 6.73778 -0.0912667 7.50465 0.818507L9.8618 3.61492C10.682 4.58788 10.4909 6.01859 9.44146 6.76291L8.5623 7.38648C10.0475 10.1443 12.401 12.397 15.2826 13.8183L15.9342 12.9768C16.7119 11.9725 18.2067 11.7897 19.2234 12.5747L22.1448 14.8302C23.0956 15.5644 23.2801 16.8824 22.5646 17.8302L20.8911 20.0468C19.5263 21.8546 17.0243 22.4994 14.8956 21.5916L13.9005 21.1673Z"
                                                       fill="#169FD8"/>
                                             </svg>
-                                            <span class="txt-14"><?=Yii::t('app','leader_phone');?></span>
+                                            <span class="txt-14"><?= Yii::t('app', 'leader_phone'); ?></span>
                                         </div>
                                         <p class="bottom txt-14"><?=$leader->phone;?></p>
                                     </div>
-                                    <div class="blog-in ml-2">
+                                    <div class="blog-in">
                                         <div class="top">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +53,7 @@ $this->title = $leaderCategory->title;
                                                       fill="#169FD8"/>
                                             </svg>
 
-                                            <span class="txt-14"><?=Yii::t('app','qabul');?></span>
+                                            <span class="txt-14"><?= Yii::t('app', 'qabul'); ?></span>
                                         </div>
                                         <p class="bottom txt-14"><?=$leader->days;?></p>
                                     </div>
@@ -68,12 +70,12 @@ $this->title = $leaderCategory->title;
                                                           d="M9.5303 0.969668C9.8232 1.26256 9.8232 1.73744 9.5303 2.0303L5.5303 6.0303C5.2374 6.3232 4.7626 6.3232 4.4697 6.0303L0.469668 2.0303C0.176777 1.73744 0.176777 1.26256 0.469668 0.969668C0.762558 0.676777 1.23744 0.676777 1.53033 0.969668L5 4.4393L8.4697 0.969668C8.7626 0.676777 9.2374 0.676777 9.5303 0.969668Z"
                                                           fill="black"/>
                                                 </svg>
-                                                <?=Yii::t('app','bio')?>
+                                                <?= Yii::t('app', 'bio') ?>
                                             </a>
                                         </header>
                                         <div class="item-content">
                                             <h2 class="item-answer txt-16">
-                                               <?=$leader->bio_info;?>
+                                                <?=$leader->bio_info;?>
                                             </h2>
                                         </div>
                                     </div>
@@ -86,7 +88,7 @@ $this->title = $leaderCategory->title;
                                                           d="M9.5303 0.969668C9.8232 1.26256 9.8232 1.73744 9.5303 2.0303L5.5303 6.0303C5.2374 6.3232 4.7626 6.3232 4.4697 6.0303L0.469668 2.0303C0.176777 1.73744 0.176777 1.26256 0.469668 0.969668C0.762558 0.676777 1.23744 0.676777 1.53033 0.969668L5 4.4393L8.4697 0.969668C8.7626 0.676777 9.2374 0.676777 9.5303 0.969668Z"
                                                           fill="black"/>
                                                 </svg>
-                                                <?=Yii::t('app','vak')?>
+                                                <?= Yii::t('app', 'vak') ?>
                                             </a>
                                         </header>
                                         <div class="item-content">
@@ -96,14 +98,13 @@ $this->title = $leaderCategory->title;
                                         </div>
                                     </div>
                                 </div>
-                                <a href="<?= Url::to(['site/contact']);?>" class="glavni-btn txt-16"><?=Yii::t('app','qabul_btn');?></a>
+                                <button class="glavni-btn txt-16"><?= Yii::t('app', 'qabul_btn'); ?></button>
                             </div>
                         </div>
-                        </div>
                     <?php endforeach; ?>
-                    </div>
-                
+                </div>
             </div>
         </div>
+        <?= $this->render('@frontend/views/news/_other-news'); ?>
     </div>
 </div>

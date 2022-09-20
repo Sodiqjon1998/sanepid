@@ -56,7 +56,8 @@ use yii\helpers\Html;
                 'inline' => false, //по
             ]),
         ]);?>
-        
+
+        <?= $form->field($model, 'address')->textInput();?>
 
         <?= $form->field($model, 'name')->textInput();?>
 
