@@ -1,0 +1,136 @@
+.footer{
+    width: 100%;
+    padding: 60px 0 65px;
+    background: $c03;
+    .footer-in{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &-l{
+            width: 25%;
+            .logos {
+                width          : max-content;
+                display        : flex;
+                justify-content: space-between;
+                align-items    : center;
+      
+                .logo {
+                  width       : 50px;
+                  height      : 50px;
+                  object-fit  : contain;
+                  margin-right: 22px;
+                }
+      
+                .txt-14 {
+                  color: $cff;
+                  font-weight: 300 !important;
+                }
+              }
+            .blog{
+                padding: 24px;
+                background: #043D54;
+                border-radius: 12px;
+                margin-top: 34px;
+                .card-blog{
+                    display: flex;
+                    align-items: flex-start;
+                    margin-top: 15px;
+                    &:first-child{
+                        margin-top: 0;
+                        svg{
+                            width: 24px;
+                        }
+                    }
+                    svg{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                    .txt-16{
+                        color: $cff;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        &-r{
+            width: 67%;
+            .top{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                .menus{
+                    display: flex;
+                    flex-direction: column;
+                    &-in{
+                        margin-top: 24px;
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                        &:nth-child(2){
+                            margin-top: 15px;
+                        }
+                        .txt-18{
+                            color: #6A99AC;
+                        }
+                        .txt-16{
+                            font-weight: 400;
+                            color: $cff;
+                            border-bottom:1px solid transparent;
+                            transition: 0.2s;
+                            &:hover{
+                                border-bottom:1px solid $cff;
+                                text-decoration: underline $cff;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-top: 50px;
+                &-l{
+                    width: 60%;
+                    color: #82AEC0;
+                }
+                &-r{
+                    width: max-content;
+                    .txt-16{
+                        font-weight: 400;
+                        color:#6A99AC;
+                        text-align: end;
+                    }
+                    .images{
+                        display: flex;
+                        margin-top: 14px;
+                        a{
+                            margin-left: 8px;
+                            width: 32px;
+                            height: 32px;
+                            background: #D9D9D9;
+                            border-radius: 5px !important;
+                            overflow: hidden;
+                            &:hover{
+                                img{
+                                    transform: scale(0.95);
+                                }
+                            }
+                            img{
+                                transition: .2s;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

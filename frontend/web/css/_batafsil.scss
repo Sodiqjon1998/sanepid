@@ -1,0 +1,220 @@
+.batafsil-page{
+    width: 100%;
+    padding: 50px 0 60px;
+    @include media(1050px){
+      padding: 20px 0 60px;
+    }
+    @include media(650px){
+      padding: 15px 0 40px !important;
+    }
+    .batafsil-in{
+        width: 100%;
+        .main{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            &-left{
+                padding-right: 30px;
+                border-right: 1px solid #D9D9D9;
+                .top-t{
+                    color: #000000;
+                    font-weight: 600;
+                    span{
+                        font-weight: 400;
+                        color: #71777A;
+                    }
+                }
+                .top-tadbir{
+                    margin-top: 0 !important;
+                  
+                  }
+                width: 67%;
+                .sana{
+                    text-align: start;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 30px;
+                    .txt-16 {
+                        color: #BCBCBC;
+                        font-weight: 400;
+                    }
+                    svg{
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 10px;
+                    }
+                }
+                .img{
+                    width: 100%;
+                    height: 400px;
+                    margin-top: 20px;
+                    border-radius: 12px;
+                }
+                .txt-48{
+                    color: #021E2B;
+                    margin-top: 18px;
+                    font-weight: 700;
+                }
+                .txt-24{
+                    font-weight: 500;
+                    color: #3F4649;
+                    margin-top: 30px;
+                }
+                .txt-18{
+                    font-weight: 500;
+                    color: #3F4649;
+                    line-height: 28px;
+                    margin-top: 30px;
+                }
+            }
+            .main-in{
+                border: none !important;
+            }
+            &-right{
+                width: 30%;
+                .txt-30{
+                    color: #000;
+                    font-weight: 500;
+                }
+                .cards{
+                    margin-top: 12px;
+                    width: 100%;
+                    .s-card {
+                        margin-top: 12px;
+                        background: $cff;
+                        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+                        border-radius: 12px;
+                        padding: 12px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        transition: .2s;
+                        &:hover{
+                            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.07) !important;
+                            .txt-14{
+                                color: $c16;
+                            }
+                        }
+                        .top {
+                          width: 100px;
+                          height: 85px;
+                          border-radius: 12px;
+                          margin-right: 15px;
+                        }
+                        .right{
+                          width: max-content;
+                        }
+                        .sana{
+                            text-align: start;
+                            display: flex;
+                            align-items: center;
+                            margin-top: 7px;
+                            .txt-12 {
+                                color: #BCBCBC;
+                                font-weight: 400;
+                            }
+                            svg{
+                                width: 12px;
+                                height: 11px;
+                                margin-right: 10px;
+                            }
+                        }
+                        .main-text{
+                            transition: .2s;
+                          font-weight: 500;
+                          color: #000000;
+                        }
+            
+            
+            
+                      }
+                }
+            }
+        }
+    }
+}
+
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    overflow: hidden;
+    .txt-14{
+        font-weight: 400;
+    }
+  }
+  
+  th {
+    text-align: left;
+    font-weight: 400;
+
+  }
+  .fr{
+    padding-left: 50px;
+  }
+    
+  thead {
+    color: #3F4649;
+    background: #F1F6F9;
+  }
+    
+   td, th {
+    padding: 1em .5em;
+    vertical-align: middle;
+  }
+    
+   td {
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    background: #fff;
+    color: #000000;
+  }
+
+
+  a {
+    color: #e9ecef;
+  }
+
+
+   @media all and (max-width: 768px) {
+      
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    
+    table {
+      position: relative; 
+      padding-bottom: 0;
+      border: none;
+      box-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+    
+    thead {
+      float: left;
+      white-space: nowrap;
+    }
+    
+    tbody {
+      overflow-x: auto;
+      overflow-y: hidden;
+      position: relative;
+      white-space: nowrap;
+    }
+    
+    tr {
+      display: inline-block;
+      vertical-align: top;
+    }
+    
+    th {
+      border-bottom: 1px solid #a39485;
+    }
+    
+    td {
+      border-bottom: 1px solid #e5e5e5;
+    }
+    
+    
+    }

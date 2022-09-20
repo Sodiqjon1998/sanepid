@@ -1,0 +1,449 @@
+
+.qonun-main{
+    width: 100%;
+    padding: 50px 0 60px;
+    @include media(1050px){
+      padding: 20px 0 60px;
+    }
+    @include media(650px){
+      padding: 15px 0 40px;
+    }
+    .qonun-in{
+        width: 100%;
+        .top-t{
+            color: #000000;
+            font-weight: 600;
+            span{
+                color: #71777A;
+                font-weight: 400;
+            }
+        }
+        .txt-48{
+            color: #021E2B;
+            margin-top: 30px;
+            font-weight: 700;
+        }
+        .swiper-wrapper{
+            padding-bottom: 70px;
+            .blog-ta{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .s-card {
+                  margin-top: 30px;
+                  background: $cff;
+                  border: 1px solid #B3BEC5;
+                  border-radius: 12px;
+                  padding: 24px;
+                  width: 32%;
+                  @include media(950px){
+                    width: 48.5%;
+                  }
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .right{
+                    width: 100%;
+                  }
+                  .top{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .sana{
+                        text-align: start;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        .txt-16 {
+                            color: #043D54;
+                            font-weight: 400;
+                        }
+                        svg{
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+    
+                  }
+                  .main-text{
+                    margin-top: 12px;
+                    font-weight: 400;
+                    color: #71777A;
+                  }
+      
+                  .txt-20 {
+                    color: $c00;
+                    text-align: start;
+                    margin-top: 18px;
+                    font-weight: 600;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                  }
+                  .bottom{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                      .txt-18 {
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: center;
+                        text-align: start;
+                        width: max-content;
+                        color: #043D54;
+                        transition: 0.2s;
+                        svg{
+                            path{
+                                fill: #043D54;
+                            }
+                        }
+                        &:hover{
+                            color: $c16;
+                            svg{
+                                path{
+                                    fill: $c16;
+                                }
+                            }
+                        }
+          
+          
+                        svg {
+                          transition: .2s;
+                          width: 14px;
+                          height: 9px;
+                          margin-left: 10px;
+                        }
+                      }
+                      .file {
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                          margin-left: 0px;
+                          margin-right: 10px;
+                        }
+                      }
+                  }
+      
+      
+                }
+                .card-c {
+                    margin-top: 30px;
+          
+                      padding        : 24px;
+                      background     : #F1F6F9;
+                      border-radius  : 12px;
+                      width          : 23.5%;
+                      @include media(950px){
+                        width: 48.5%;
+                      }
+                      display        : flex;
+                      align-items    : center;
+                      justify-content: space-between;
+                      flex-direction : column;
+                      transition: 0.3s;
+                      border: 1px solid transparent;
+                      &:hover{
+                        border: 1px solid $c16;
+
+                      }
+                      .img{
+                          display: flex;
+                          align-items    : center;
+                          justify-content: center;
+                          width: 85px;
+                          height: 85px;
+                          border-radius: 50%;
+                          background: $c16;
+                          img {
+                            width     : 30px;
+                            height    : 30px;
+                            object-fit: contain;
+                          }
+                      }
+                
+                      .txt-18 {
+                        color     : $c00;
+                        margin-top: 18px;
+                        text-align: center;
+                        font-weight: 600;
+                      }
+                
+                      .txt-16 {
+                        color     : #808588;
+                        margin-top: 18px;
+                        text-align: center;
+                      }
+                }
+              }
+        }
+    }
+}
+
+
+//qonun-in
+
+.qon-page{
+    width: 100%;
+    padding: 50px 0 60px;
+    @include media(1050px){
+      padding: 20px 0 60px;
+    }
+    @include media(650px){
+      padding: 15px 0 40px;
+    }
+    .qon-in{
+        width: 100%;
+        .main{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            &-left{
+                padding-right: 30px;
+                border-right: 1px solid #D9D9D9;
+                width: 67%;
+                .back-btn{
+                    svg{
+                        margin-left: 0;
+                        margin-right: 10px;
+                        path{
+                            fill: $c16;
+                        }
+                    }
+                    &:hover{
+                        svg{
+                            transform: translateX(-5px);
+                            path{
+                                fill: $cff;
+                            }
+                        }
+                    }
+                }
+                .txt-32{
+                    font-weight: 700;
+                    color: #013A52;
+                    margin-top: 30px;
+                }
+
+                .yukla{
+                    width: 100%;
+                    display: flex;
+                    margin-top: 25px;
+                    justify-content: space-between;
+                    .sana{
+                        text-align: start;
+                        display: flex;
+                        align-items: center;
+                        .txt-16 {
+                            color: #043D54;
+                            font-weight: 400;
+                        }
+                        svg{
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .txt-18 {
+                        display: flex;
+                        align-items: center;
+                        text-align: start;
+                        width: max-content;
+                        color: #043D54;
+                        transition: 0.2s;
+                        svg{
+                            path{
+                                fill: #043D54;
+                            }
+                        }
+                        &:hover{
+                            color: $c16;
+                            svg{
+                                path{
+                                    fill: $c16;
+                                }
+                            }
+                        }
+          
+          
+                        svg {
+                          transition: .2s;
+                          width: 14px;
+                          height: 9px;
+                          margin-left: 10px;
+                        }
+                      }
+                      .file {
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                          margin-left: 0px;
+                          margin-right: 10px;
+                        }
+                      }
+    
+                  }
+                .txt-18{
+                    font-weight: 500;
+                    color: #3F4649;
+                    line-height: 28px;
+                    margin-top: 30px;
+                }
+            }
+            .main-in{
+                border: none !important;
+            }
+            &-right{
+                width: 30%;
+                padding-left: 30px;
+                .txt-20{
+                    color: #000;
+                    font-weight: 500;
+                }
+                .s-card {
+                    margin-top: 12px;
+                    background: $cff;
+                    border: 1px solid #B3BEC5;
+                    border-radius: 12px;
+                    padding: 24px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .right{
+                      width: 100%;
+                    }
+                    .top{
+                      width: 100%;
+                      display: flex;
+                      justify-content: space-between;
+                      .sana{
+                          text-align: start;
+                          display: flex;
+                          align-items: center;
+                          .txt-16 {
+                              color: #043D54;
+                              font-weight: 400;
+                          }
+                          svg{
+                              width: 18px;
+                              height: 18px;
+                              margin-right: 10px;
+                          }
+                      }
+      
+                    }
+                    .main-text{
+                      margin-top: 12px;
+                      font-weight: 400;
+                      color: #71777A;
+                    }
+        
+                    .txt-20 {
+                      color: $c00;
+                      text-align: start;
+                      margin-top: 18px;
+                      font-weight: 600;
+                      display: -webkit-box;
+                      -webkit-box-orient: vertical;
+                      -webkit-line-clamp: 3;
+                      overflow: hidden;
+                    }
+                    .bottom{
+                      width: 100%;
+                      display: flex;
+                      justify-content: space-between;
+                        .txt-18 {
+                          margin-top: 15px;
+                          display: flex;
+                          align-items: center;
+                          text-align: start;
+                          width: max-content;
+                          color: #043D54;
+                          transition: 0.2s;
+                          svg{
+                              path{
+                                  fill: #043D54;
+                              }
+                          }
+                          &:hover{
+                              color: $c16;
+                              svg{
+                                  path{
+                                      fill: $c16;
+                                  }
+                              }
+                          }
+            
+            
+                          svg {
+                            transition: .2s;
+                            width: 14px;
+                            height: 9px;
+                            margin-left: 10px;
+                          }
+                        }
+                        .file {
+                          svg {
+                              width: 20px;
+                              height: 20px;
+                            margin-left: 0px;
+                            margin-right: 10px;
+                          }
+                        }
+                    }
+        
+                }
+                .card-c {
+                    border: 1px solid transparent;
+                    &:hover{
+                      border: 1px solid $c16;
+
+                    }
+                      margin-top: 12px;
+                      padding        : 24px;
+                      background     : #F1F6F9;
+                      border-radius  : 12px;
+                      width          : 100%;
+                      display        : flex;
+                      align-items    : center;
+                      justify-content: space-between;
+                      flex-direction : column;
+                      transition: 0.3s;
+                      .img{
+                          display: flex;
+                          align-items    : center;
+                          justify-content: center;
+                          width: 85px;
+                          height: 85px;
+                          border-radius: 50%;
+                          background: $c16;
+                          img {
+                            width     : 30px;
+                            height    : 30px;
+                            object-fit: contain;
+                          }
+                      }
+                
+                      .txt-18 {
+                        color     : $c00;
+                        margin-top: 18px;
+                        text-align: center;
+                        font-weight: 600;
+                      }
+                
+                      .txt-16 {
+                        color     : #808588;
+                        margin-top: 18px;
+                        text-align: center;
+                      }
+                }
+            }
+        }
+    }
+}
+

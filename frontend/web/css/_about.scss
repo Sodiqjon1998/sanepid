@@ -1,0 +1,111 @@
+.about-main{
+    width: 100%;
+    padding: 50px 0 60px;
+    @include media(1050px){
+        padding: 20px 0 60px;
+      }
+      @include media(650px){
+        padding: 15px 0 40px;
+      }
+    .about-in{
+        width: 100%;
+        .top-t{
+            color: #000000;
+            font-weight: 600;
+            span{
+                color: #71777A;
+                font-weight: 400;
+            }
+        }
+        .main-content{
+            width: 100%;
+            margin-top: 30px;
+            .sec-top{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 70px;
+                .left{
+                    width: 49%;
+                    .txt-48{
+                        color: #021E2B;
+                        font-weight: 700;
+                    }
+                    .txt-20{
+                        color: #3F4649;
+                        font-weight: 400;
+                        margin-top: 18px;
+                    }
+                }
+                img{
+                    width: 600px;
+                    height: 420px;
+                    border-radius: 12px;
+                }
+                .right{
+                    width: 49%;
+                }
+
+            }
+        }
+        .contact{
+            width: 100%;
+            .txt-32{
+                font-weight: 700;
+                color: #021E2B;
+            }
+            &-main{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-top: 30px;
+                .right{
+                    width: 49%;
+                    background: #FFFFFF;
+                    border: 1px solid #DBE4E9;
+                    border-radius: 12px;
+                    .top{
+                        padding: 30px 50px;
+                        border-bottom: 1px solid #DBE4E9;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                        .left{
+                            display: flex;
+                            align-items: center;
+                            width: 49%;
+                            svg{
+                                width: 17px;
+                                height: 18px;
+                                margin-right: 10px;
+                            }
+                            .txt-20{
+                                color: #7B8A90;
+                                font-weight: 400;
+                            }
+                        }
+                        .right-in{
+                            width: 48%;
+                            text-align: start;
+                            color: #000000;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .left-main{
+                    width: 49%;
+                    border-radius: 12px;
+                    height: 450px;
+                }
+            }
+        }
+       
+    }
+}
+

@@ -1,0 +1,277 @@
+.xudud{
+    width: 100%;
+    padding: 60px 0;
+    background: #F7F9FA;
+    border-top: 1px solid #DBE4E9;
+    border-bottom: 1px solid #DBE4E9;
+    .xudud-in{
+        width: 100%;
+        .top{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main-content {
+          width: 100%;
+          position: relative;
+          .card-r{
+                padding: 38px 24px;
+                background: #FFFFFF;
+                box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.07);
+                border-radius: 12px;
+                width: 40%;
+                .txt-20{
+                    color: $c00;
+                }
+                .card-blog{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+                    svg{
+                        width: 15px;
+                        height: 18px;
+                        margin-right: 10px;
+                    }
+                    .txt-16{
+                        color: $c00;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .card-l{
+                padding: 24px;
+                width: 58%;
+                background: #FFFFFF;
+                box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.07);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 212px;
+                    height: 200px;
+                    margin-right: 25px;
+                    border-radius:12px;
+                }
+                .card-l-in{
+                    .txt-20{
+                        color: $c00;
+                    }
+                    .card-blog{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 15px;
+                        svg{
+                            width: 15px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                        .txt-16{
+                            color: $c00;
+                            font-weight: 400;
+                        }
+
+                }
+                }
+            }
+            .cards{
+                width: 100%;
+                margin-top: 33px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+        }
+    }
+}
+
+//boshqarma-page
+
+.boshqarma-main{
+    width: 100%;
+    padding: 50px 0 60px;
+    @include media(1050px){
+        padding: 20px 0 60px;
+      }
+      @include media(650px){
+        padding: 15px 0 40px;
+      }
+    .boshqarma-in{
+        width: 100%;
+        .top-t{
+            color: #000000;
+            font-weight: 600;
+            span{
+                color: #71777A;
+                font-weight: 400;
+            }
+        }
+        .txt-48{
+            color: #021E2B;
+            margin-top: 30px;
+            @include media(650px){
+                margin-top: 18px !important;
+            }
+            font-weight: 700;
+        }
+        .main-content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card-l{
+                padding: 24px;
+                margin-top: 30px;
+                width: 32%;
+                background: #FFFFFF;
+                box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.07);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                transition: 0.2s;
+                border: 1px solid transparent;
+                &:hover{
+                    box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.07) !important;
+
+                    border: 1px solid $c16;
+                    .card-l-in{
+                        .txt-20{
+                            color: $c16;
+                        }
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: 260px;
+                    border-radius:12px;
+                    margin-bottom: 24px;
+                }
+                .card-l-in{
+                    .txt-20{
+                        color: $c00;
+                        transition: .2s;
+                    }
+                    .card-blog{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 15px;
+                        svg{
+                            width: 15px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                        .txt-16{
+                            color: $c00;
+                            font-weight: 400;
+                        }
+
+                }
+                }
+            }
+        }
+        .tuzilma-img{
+            margin-top: 30px;
+            @include media(650px){
+                margin-top: 18px !important;
+            }
+            width: 100%;
+            height: auto !important;
+            object-position: center;
+            object-fit: contain;
+        }
+       
+    }
+}
+
+//boshqarma-in
+
+.bosh-main{
+    width: 100%;
+    padding: 50px 0 60px;
+    @include media(1050px){
+        padding: 20px 0 60px;
+      }
+      @include media(650px){
+        padding: 15px 0 40px;
+      }
+    .bosh-in{
+        width: 100%;
+        .top-t{
+            color: #000000;
+            font-weight: 600;
+            span{
+                color: #71777A;
+                font-weight: 400;
+            }
+        }
+        .main-content{
+            width: 100%;
+            margin-top: 30px;
+            .sec-top{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 70px;
+                .left{
+                    width: 49%;
+                    .txt-48{
+                        color: #021E2B;
+                        font-weight: 700;
+                    }
+                    .txt-20{
+                        color: #3F4649;
+                        font-weight: 400;
+                        margin-top: 18px;
+                    }
+                    .blog{
+                        margin-top: 30px;
+                        .card-blog{
+                            display: flex;
+                            align-items: flex-start;
+                            margin-top: 15px;
+                            svg{
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 10px;
+                            }
+                            .txt-18{
+                                color: $c00 !important;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                img{
+                    width: 600px;
+                    height: 420px;
+                    border-radius: 12px;
+                }
+                .right{
+                    width: 49%;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+.carda{
+    border: 1px solid transparent;
+    transition: .2s;
+
+    &:hover{
+        box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.07) !important;
+
+        border: 1px solid $c16;
+        .card-l-in{
+            .txt-20{
+                color: $c16;
+            }
+        }
+    }
+}

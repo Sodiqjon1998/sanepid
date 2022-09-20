@@ -1,0 +1,69 @@
+.work-main{
+    width: 100%;
+    padding: 50px 0 60px;
+    @include media(1050px){
+        padding: 20px 0 60px;
+      }
+      @include media(650px){
+        padding: 15px 0 40px !important;
+      }
+    .work-in{
+        width: 100%;
+        .top-t{
+            color: #000000;
+            font-weight: 600;
+            span{
+                color: #71777A;
+                font-weight: 400;
+            }
+        }
+        .txt-48{
+            color: #021E2B;
+            margin-top: 30px;
+            font-weight: 700;
+        }
+        .card-w{
+            width: 100%;
+            border: 1px solid #BCBCBC;
+            border-radius: 12px;
+            margin-top: 30px;
+            &-in{
+                padding: 30px;
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                border-bottom: 1px solid #BCBCBC;
+                &:last-child{
+                    border-bottom: none;
+                }
+                .left{
+                    color: #71777A;
+                    font-weight: 400;
+                    width: 30%;
+                }
+                .txt-20{
+                    font-weight: 400;
+                    color: #000;
+                    width: 70%;
+
+                }
+                .sana{
+                    text-align: start;
+                    display: flex;
+                    align-items: center;
+                    .txt-20 {
+                        color: #169FD8;
+                        font-weight: 400;
+                        width: 100%;
+                    }
+                    svg{
+                        width: 18px;
+                        height: 17px;
+                        margin-right: 10px;
+                    }
+                }
+            }    
+        }
+       
+    }
+}

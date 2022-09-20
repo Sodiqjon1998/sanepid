@@ -1,0 +1,119 @@
+.modal-p{
+    width: 1000px;
+    @include media(1100px){
+        width: 850px;
+    }
+    @include media(950px){
+        width: 700px;
+        padding: 24px;
+    }
+    @include media(800px){
+        width: 500px;
+        padding: 24px;
+        .back{
+            right: 18px;
+            top: 18px;
+        }
+    }
+    padding: 50px;
+    position: fixed;
+    background: #FFFFFF;
+    border-radius: 12px;
+    z-index: -12;
+    opacity: 0;
+    top: 60%;
+    left: 50%;
+    transition: top 0.3s ease-in-out;
+    transform: translate(-50%,-50%);
+    &.active{
+        top: 50%;
+        z-index: 12;
+        opacity: 1;
+    }
+    .back{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 30px;
+        top: 30px;
+        cursor: pointer;
+    }
+    .txt-24{
+        color:$c00;
+        font-weight: 600;
+    }
+    form{
+        margin-top: 15px;
+        width: 100%;
+        .input{
+            width: 100%;
+            margin-right: 24px;
+            background: #F1F6F9;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            border-radius: 12px;
+            padding: 11px 22px;
+            color: #000;
+            outline: none;
+            transition: 0.2s;
+            &::placeholder {
+                color: #CFCFCF;
+                font-weight: 400;
+              }
+            &:focus{
+                border: 1px solid $c03;
+            }
+        }
+        .glavni-btn{
+            margin-top: 24px;
+        }
+    }
+    .search-page{
+        width: 100%;
+        margin-top: 24px;
+        .top{
+            color: #7B8A90;
+            font-weight: 400;
+            strong{
+                color: #000;
+            }
+        }
+        .card-bg{
+            overflow-y: scroll;
+            margin-top: 5px;
+            height: 250px;
+
+            .card-m{
+                width: 95%;
+                background: #F1F6F9;
+                border-radius: 12px;
+                padding: 18px 12px;
+                margin-top: 12px;
+                cursor: pointer;
+                .sana{
+                    text-align: start;
+                    display: flex;
+                    align-items: center;
+                    .txt-16 {
+                        color: #BCBCBC;
+                        font-weight: 400;
+                    }
+                    svg{
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 10px;
+                    }
+                }
+                .bottom{
+                    margin-top: 6px;
+                    color: #000;
+                    width: 90%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+
+        }
+    }
+}
